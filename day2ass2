@@ -1,0 +1,33 @@
+//Assignment 2
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int i,n,k,esum,osum;
+	i=1;
+	esum=0;
+	osum=0;
+	printf("Enter the n value\n");
+	scanf("%d",&n);
+	printf("Enter the k value\n");
+	scanf("%d",&k);
+	printf("The numbers divisible by k are\n");
+	while(i<=n)
+	{ 
+		if(i%k==0)
+		{
+			printf("%d\n",i);
+	    if(i%2==0)
+	    {
+	    	esum=esum+i;
+		}
+		else
+		{
+			osum=osum+i;
+		}
+	    }
+		i++;
+	}
+	printf("Even sum = %d\n",esum);
+	printf("Odd sum = %d",osum);
+    }
