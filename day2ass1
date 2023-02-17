@@ -1,0 +1,14 @@
+//Assignment 1
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ int n,c,r,i;
+ printf("Enter the table u want\nEnter upto value");
+ scanf("%d%d",&n,&c);
+ for(i=1;i<=c;i++)
+ {
+ r=n*i;
+ printf("%d x %d = %d\n",n,i,r);	
+ }
+}
