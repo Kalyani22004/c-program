@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int n,i,esum,osum,diff;
+	scanf("%d",&n);
+	i=1;
+	esum=0;
+	osum=0;
+	while(i<=n)
+	{
+		printf("%d\n",i);
+		if(i%2==0)
+		{
+			esum=esum+i;
+	    }
+	    else
+	    {
+	    	osum=osum+i;
+		}
+		i++;
+	}
+	printf("Even sum = %d\n",esum);
+	printf("Odd sum = %d\n",osum);
+	diff=esum-osum;
+	printf("Difference = %d",diff);
+}
